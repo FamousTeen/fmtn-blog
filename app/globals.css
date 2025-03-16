@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+@config "../tailwind.config.ts";
 /* 
 const {
   default: flattenColorPalette,
@@ -92,7 +94,7 @@ button {
   margin: 0 auto;
 }
 
-@theme extend {
+/* @theme {
   --color-black: #000;
   --color-black-100: #000319;
   --color-black-200: rgba(17, 25, 40, 0.75);
@@ -227,10 +229,14 @@ button {
       transform: translate(calc(-50% - 0.5rem));
     }
   }
-}
-
+} */
+/* 
 .bg-grid {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='black'><path d='M0 .5H31.5V32'/></svg>");
+}
+
+@utility bg-grid-black-[*] {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='black' opacity='--value([Float])'><path d='M0 .5H31.5V32'/></svg>");
 }
 
 .bg-grid-small {
@@ -240,3 +246,19 @@ button {
 .bg-dot {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'><circle fill='black' id='pattern-circle' cx='10' cy='10' r='1.6257413380501518'></circle></svg>");
 }
+
+/* .bg-grid-white-02 {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='white' opacity='0.2'><path d='M0 .5H31.5V32'/></svg>");
+}
+
+.bg-grid-black-02 {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='black' opacity='0.2'><path d='M0 .5H31.5V32'/></svg>");
+}
+
+.dark .bg-grid-white-02 {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='white' opacity='0.2'><path d='M0 .5H31.5V32'/></svg>") !important;
+}
+
+.dark .bg-grid-black-02 {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='black' opacity='0.2'><path d='M0 .5H31.5V32'/></svg>") !important;
+} */
