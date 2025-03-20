@@ -5,7 +5,7 @@ import { socialMedia } from '@/data'
 
 const Footer = () => {
   return (
-    <footer className='w-full mb-[100px] md:mb-0 pb-10' id='contact'>
+    <footer className='w-full mb-[100px] md:mb-10 pb-10' id='contact'>
         <div className='flex flex-col items-center'>
             <h1 className='heading lg:max-w-[45vw]'>Ready to take <span className='text-purple'>your digital presence</span> to the next level?</h1>
             <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how i can help you achieve your goals.</p>
