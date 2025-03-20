@@ -1,7 +1,6 @@
 import { workExperience } from '@/data'
 import React from 'react'
 import { Button } from './ui/moving-border'
-import { Cardo } from 'next/font/google'
 
 const Experience = () => {
     return (

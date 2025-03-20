@@ -30,7 +30,7 @@ export const PinContainer = ({
   };
 
   return (
-    <Link href={href}
+    <Link href={href || "/"}
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
@@ -60,8 +60,7 @@ export const PinContainer = ({
 };
 
 export const PinPerspective = ({
-  title,
-  href,
+  title
 }: {
   title?: string;
   href?: string;

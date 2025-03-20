@@ -192,7 +192,7 @@ const ShaderMaterial = ({
   uniforms: Uniforms;
 }) => {
   const { size } = useThree();
-  const ref = useRef<THREE.Mesh>();
+  const ref = useRef<THREE.Mesh>(null);
   let lastFrameTime = 0;
 
   useFrame(({ clock }) => {
@@ -203,6 +203,7 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
+    /* eslint-disable */
     const material: any = ref.current.material;
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
@@ -286,6 +287,7 @@ const ShaderMaterial = ({
       <planeGeometry args={[2, 2]} />
       <primitive object={material} attach="material" />
     </mesh>
+    /* eslint-enable */
   );
 };
 

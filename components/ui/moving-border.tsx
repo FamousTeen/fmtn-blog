@@ -22,6 +22,7 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
+  /* eslint-disable */
   as?: any;
   containerClassName?: string;
   borderClassName?: string;
@@ -82,7 +83,8 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
+  /* eslint-disable */
+  const pathRef = useRef<any>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
