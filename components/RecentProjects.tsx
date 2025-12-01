@@ -1,7 +1,7 @@
-import { projects } from '@/data'
+// import { projects } from '@/data'
 import React from 'react'
-import { PinContainer } from './ui/3d-pin'
-import { FaLocationArrow } from 'react-icons/fa'
+// import { PinContainer } from './ui/3d-pin'
+// import { FaLocationArrow } from 'react-icons/fa'
 
 const RecentProjects = () => {
     return (
@@ -13,7 +13,7 @@ const RecentProjects = () => {
                         recent projects
                     </span>
                 </h1>
-                <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+                {/* <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
                     {projects.map(({ id, title, des, img, iconLists, link }) => (
                         <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] sm:w-[570px] flex items-center justify-center w-[80vw]'>
                             <PinContainer title={link} href={link}>
@@ -23,7 +23,7 @@ const RecentProjects = () => {
                                     </div>
                                     <img src={img} alt={title} className='z-10 absolute bottom-0' />
                                 </div>
-                                {/* line-clamp 1 buat gk melebihi 1 baris */}
+                                {/* line-clamp 1 buat gk melebihi 1 baris */} {/*
                                 <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>{title}</h1>
                                 <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>{des}</p>
                                 <div className="flex items-center justify-between mt-7 mb-3">
@@ -43,7 +43,7 @@ const RecentProjects = () => {
                             </PinContainer>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     )
